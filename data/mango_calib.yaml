@@ -1,1 +1,18 @@
+# Mango Dataset
+# Train command: python train.py --data mango_valid.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /mango_valid
+#     /yolov5
 
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../data/images/train  # 265 images
+val: ../data/images/val  # 30 images
+test: ../data/images/test  # 33 images
+
+# number of classes
+nc: 1
+
+# class names
+names: ['mango']
